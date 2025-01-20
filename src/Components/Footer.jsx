@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="py-5 container">
       <Container>
-        <Row>
-          <Col xs={12} sm={2} md={2}>
+        <Row className='foothed'>
+          <Col xs={12} sm={6} md={2}>
             <h5>Product</h5>
             <ul className="list-unstyled">
               <li>Overview</li>
@@ -18,7 +18,7 @@ const Footer = () => {
               <li>Releases</li>
             </ul>
           </Col>
-          <Col xs={12} sm={2} md={2}>
+          <Col xs={12} sm={6} md={2}>
             <h5>Company</h5>
             <ul className="list-unstyled">
               <li>About us</li>
@@ -29,7 +29,8 @@ const Footer = () => {
               <li>Contact</li>
             </ul>
           </Col>
-          <Col xs={12} sm={2} md={2}>
+
+          <Col xs={12} sm={6} md={2}>
             <h5>Resources</h5>
             <ul className="list-unstyled">
               <li>Blog</li>
@@ -40,7 +41,7 @@ const Footer = () => {
               <li>Support</li>
             </ul>
           </Col>
-          <Col xs={12} sm={2} md={2}>
+          <Col xs={12} sm={6} md={2}>
             <h5>Use cases</h5>
             <ul className="list-unstyled">
               <li>Startups</li>
@@ -51,7 +52,7 @@ const Footer = () => {
               <li>Ecommerce</li>
             </ul>
           </Col>
-          <Col xs={12} sm={2} md={2}>
+          <Col xs={12} sm={6} md={2}>
             <h5>Social</h5>
             <ul className="list-unstyled">
               <li>Twitter</li>
@@ -62,7 +63,7 @@ const Footer = () => {
               <li>Dribbble</li>
             </ul>
           </Col>
-          <Col xs={12} sm={2} md={2}>
+          <Col xs={12} sm={6} md={2}>
             <h5>Legal</h5>
             <ul className="list-unstyled">
               <li>Terms</li>
@@ -78,34 +79,76 @@ const Footer = () => {
 
       <Container>
         <Row className="footer-bottom">
-          <Col xs={12} sm={12} md={6} className="text-center text-md-left mt-4">
+          <Col className="text text-md-left mt-4">
             <img
               src={zysk}
               alt="Zysk Logo"
               style={{ width: '50px', height: '50px', objectFit: 'contain' }}
             />
           </Col>
-          <Col xs={12} sm={12} md={6} className="text-center mt-4">
+          <Col className="text-center mt-4">
             <p className="mt-3">© 2077 Zysk Technologies. All rights reserved.</p>
           </Col>
         </Row>
       </Container>
 
       <style jsx>{`
-        .footer-bottom {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        }
+  .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: start;
+    align-items: center;
+  }
 
-        @media (max-width: 767px) {
-          .footer-bottom {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          }
-        }
-      `}</style>
+  .foothed {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .footer-bottom {
+      grid-template-columns: 1fr 1fr;
+      justify-items: start;
+    }
+    .foothed {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .footer-bottom {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    .foothed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+    .footer ul {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footer-bottom {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    .foothed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+    .footer ul {
+      margin-bottom: 1rem;
+    }
+  }
+`}</style>
+
     </footer>
   );
 };

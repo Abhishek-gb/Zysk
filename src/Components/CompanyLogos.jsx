@@ -14,23 +14,23 @@ const CompanyLogos = () => {
         <div className="text-center mb-4">
           <p>Join 4,000+ companies already growing</p>
         </div>
-        <Row>
-          <Col md={2} className="text-center mb-3">
+        <Row className="logo-row">
+          <Col md={2} sm={4} xs={6} className="text-center mb-3">
             <img src={boltshiftLogo} alt="Boltshift Logo" className='w-100'/>
           </Col>
-          <Col md={2} className="text-center mb-3">
+          <Col md={2} sm={4} xs={6} className="text-center mb-3">
             <img src={lightboxLogo} alt="Lightbox Logo"  className='w-100'/>
           </Col>
-          <Col md={2} className="text-center mb-3">
+          <Col md={2} sm={4} xs={6} className="text-center mb-3">
             <img src={featherdevLogo} alt="FeatherDev Logo"  className='w-100'/>
           </Col>
-          <Col md={2} className="text-center mb-3">
+          <Col md={2} sm={4} xs={6} className="text-center mb-3">
             <img src={spheruleLogo} alt="Spherule Logo"  className='w-100'/>
           </Col>
-          <Col md={2} className="text-center mb-3">
+          <Col md={2} sm={4} xs={6} className="text-center mb-3">
             <img src={globalbankLogo} alt="GlobalBank Logo"  className='w-100'/>
           </Col>
-          <Col md={2} className="text-center mb-3">
+          <Col md={2} sm={4} xs={6} className="text-center mb-3">
             <img src={nietzscheLogo} alt="Nietzsche Logo"  className='w-100'/>
           </Col>
         </Row>

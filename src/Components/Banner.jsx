@@ -8,26 +8,26 @@ function Banner() {
   return (
     <>
       <div className="d-flex align-items-center justify-content-center mt-5">
-      <div
-        className="d-flex align-items-center border border-danger rounded-pill p-2"
-        style={{ maxWidth: "fit-content" }}
-      >
-        <Button
-          variant="outline-danger"
-          className="rounded-pill me-2 px-3 py-1  border border-danger"
-          style={{ fontWeight: "bold", border: "red" }}
+        <div
+          className="d-flex align-items-center border border-danger rounded-pill p-2"
+          style={{ maxWidth: "fit-content" }}
         >
-          New feature
-        </Button>
-        <span className="text-danger fw-bold d-flex align-items-center">
-          Check out the team dashboard{" "}
-          <FaArrowRight className="ms-2" />
-        </span>
+          <Button
+            variant="outline-danger"
+            className="rounded-pill me-2 px-3 py-1 border border-danger"
+            style={{ fontWeight: "bold", border: "red" }}
+          >
+            New feature
+          </Button>
+          <span className="text-danger fw-bold d-flex align-items-center">
+            Check out the team dashboard{" "}
+            <FaArrowRight className="ms-2" />
+          </span>
+        </div>
       </div>
-    </div>
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-6 offset-md-3 text-center">
+          <div className="col-md-6 col-12 offset-md-3 text-center">
             <h2>Beautiful analytics to grow smarter</h2>
             <p>
               Powerful, self-serve product and growth analytics to help you
