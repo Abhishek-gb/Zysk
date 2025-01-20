@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { TbMessageCircleUser } from "react-icons/tb"; 
 import { ImPower } from "react-icons/im"; 
 import { TfiCommentsSmiley } from "react-icons/tfi"; 
@@ -17,7 +16,6 @@ const FeaturesSection = () => {
         and retain more users. Trusted by over 4,000 startups.
       </p>
       <div className="row mt-5">
-        {/* Feature 1 */}
         <div className="col-md-4 mb-4">
           <div>
             <TbMessageCircleUser size={40} className="text mb-3" />
@@ -28,7 +26,6 @@ const FeaturesSection = () => {
             </p>
           </div>
         </div>
-        {/* Feature 2 */}
         <div className="col-md-4 mb-4">
           <div>
             <ImPower size={40} className="text mb-3" />
@@ -38,7 +35,6 @@ const FeaturesSection = () => {
             </p>
           </div>
         </div>
-        {/* Feature 3 */}
         <div className="col-md-4 mb-4">
           <div>
             <TbSteam size={40} className="text mb-3" />
@@ -48,7 +44,6 @@ const FeaturesSection = () => {
             </p>
           </div>
         </div>
-        {/* Feature 4 */}
         <div className="col-md-4 mb-4">
           <div>
             <TfiCommentsSmiley size={40} className="text mb-3" />
@@ -58,7 +53,6 @@ const FeaturesSection = () => {
             </p>
           </div>
         </div>
-        {/* Feature 5 */}
         <div className="col-md-4 mb-4">
           <div>
             <MdKeyboardCommandKey size={40} className="text mb-3" />
@@ -68,7 +62,6 @@ const FeaturesSection = () => {
             </p>
           </div>
         </div>
-        {/* Feature 6 */}
         <div className="col-md-4 mb-4">
           <div>
             <LuMessageCircleHeart size={40} className="text mb-3" />

@@ -5,12 +5,10 @@ import blog3 from "./Images/blog-3.png";
 import Dropdown from "./Images/Dropdown.png";
 import round1 from "./Images/round1.png";
 import round2 from "./Images/round2.png";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const BlogSection = () => {
   return (
     <div className="container my-5">
-      {/* Header Section */}
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
           <h6 className="text-danger">Our Blog</h6>
@@ -23,10 +21,7 @@ const BlogSection = () => {
           <button className="btn btn-danger">View all posts</button>
         </div>
       </div>
-
-      {/* Blog Cards Section */}
       <div className="row">
-        {/* Card 1 */}
         <div className="col-md-4">
           <div className="card border-0">
             <img
@@ -55,8 +50,6 @@ const BlogSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Card 2 */}
         <div className="col-md-4">
           <div className="card border-0">
             <img
@@ -85,8 +78,6 @@ const BlogSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Card 3 */}
         <div className="col-md-4">
           <div className="card border-0">
             <img

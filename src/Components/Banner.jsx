@@ -54,7 +54,6 @@ function Banner() {
             </div>
           </div>
         </div>
-        {/* Image with reduced size */}
         <div className="mt-5 text-center">
           <img
             src={banner}
@@ -67,5 +66,4 @@ function Banner() {
     </>
   );
 }
-
 export default Banner;
